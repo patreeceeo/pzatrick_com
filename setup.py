@@ -18,11 +18,14 @@ requires = [
     , 'hem'
     , 'horus'
     , 'deform_bootstrap'
+    # testing dependancies
+    , 'webtest'
+    , 'mock'
 ]
 
-setup(name='sontek',
+setup(name='pzatrick_com',
     version='0.0',
-    description='sontek',
+    description="pzatrick's website",
     long_description=README + '\n\n' +  CHANGES,
     classifiers=[
     "Programming Language :: Python",
@@ -39,13 +42,13 @@ setup(name='sontek',
     zip_safe=False,
     install_requires=requires,
     tests_require=requires,
-    test_suite="sontek",
+    test_suite="pzatrick_com",
     entry_points = """\
     [paste.app_factory]
-    main = sontek:main
+    main = pzatrick_com:main
     [console_scripts]
-    init_sontek_db = sontek.scripts.initializedb:main
-    migrate_from_tekblog = sontek.scripts.migrate_from_tekblog:main
+    init_pzatrick_com_db = pzatrick_com.scripts.initializedb:main
+    migrate_from_tekblog = pzatrick_com.scripts.migrate_from_tekblog:main
     """,
 )
 
