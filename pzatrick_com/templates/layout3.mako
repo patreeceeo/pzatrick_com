@@ -5,32 +5,24 @@
   <!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
   <!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
   <link href="${request.static_url('pzatrick_com:static/css/sourcehighlight.css')}" rel="stylesheet">
-  <link href="${request.static_url('pzatrick_com:static/css/main.css')}" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="${request.route_url('hiero_entry_rss')}">
 
-
-  
-
-  <title>sontek's humble adode - John Anderson</title>
+  <title>p(z)atrick's corner</title>
   <meta charset="utf-8" />
 </head>
 <body>
   <section id="sidebar">
     <figure id="user_logo">
-        <img src="http://s.gravatar.com/avatar/848c8fa8f54256aa570becc90123bee2?s=130" />
+        <img src="static/img/bicycle.png" /></a>
     </figure>
 
     <div class="user_meta">
-      <h1 id="user"><a href="#" class="">John Anderson</a></h1>
-      <a class="rss" href="${request.route_url('hiero_entry_rss')}"><img src="${request.static_url('pzatrick_com:static/img/rss.png')}" /></a>
-      <h2>Open Source Hacker</h2>
-      <ul>
-          <li><a href="${request.route_url('index')}">Home</a></li>
-          <li><a href="${request.route_url('hiero_entry_category', slug='tech')}">Tech Blog</a></li>
-          <li><a href="${request.route_url('hiero_entry_category', slug='personal')}">Personal Blog</a></li>
-          <li><a href="${request.route_url('projects')}">Projects</a></li>
-          <li><a href="${request.route_url('resume')}">Resumé</a></li>
-          <li><a href="${request.route_url('about')}">About</a></li>
+      <h1 id="user"><a href="#" class="">Patrick's Corner</a></h1>
+      <h2>It ain't much, but it's mine.</h2>
+      <ul class="sign-post">
+          <li><a class="sign right-sign" href="${request.route_url('hiero_entry_category', slug='tech')}">Ramblings</a></li>
+          <li><a class="sign left-sign" href="${request.route_url('hiero_entry_category', slug='personal')}">Media</a></li>
+          <li><a class="sign right-sign" href="${request.route_url('projects')}">Software</a></li>
+          <li><a class="sign left-sign" href="${request.route_url('resume')}">Resumé</a></li>
       </ul>
     </div>
     <footer>
@@ -45,6 +37,7 @@
   </section>
   <script type="text/javascript">
 
+    todo: get my own GA code
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-9376946-2']);
     _gaq.push(['_trackPageview']);
