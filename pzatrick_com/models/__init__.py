@@ -11,6 +11,8 @@ from hiero.models.blog          import EntryTagMixin
 from hiero.models.blog          import TagMixin
 from hiero.models.blog          import SeriesMixin
 from zope.sqlalchemy            import ZopeTransactionExtension
+from sqlalchemy                 import Column
+from sqlalchemy.types           import Unicode
 
 from sqlalchemy.orm import (
     scoped_session
@@ -43,7 +45,8 @@ class Category(CategoryMixin, Base):
     pass
 
 class Entry(EntryMixin, Base):
-    pass
+    image_url = Column(Unicode(128), nullable=True)
+
 
 class EntryAssociation(EntryAssociationMixin, Base):
     pass

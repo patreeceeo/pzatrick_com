@@ -12,6 +12,8 @@ from pyramid.paster import (
 from ..models import (
     DBSession
     , Base
+    , Group
+    , User
 )
 
 def usage(argv):
@@ -29,6 +31,12 @@ def main(argv=sys.argv):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
-#    with transaction.manager:
+    with transaction.manager:
+        user = User(username='pzatrick', password='1639@Hawkins', email="patrickcandoit@gmail.com")
+        group = Group(name='admin', description='AYBABTU') 
+        group.users.append(user)
+        DBSession.add(user)
+        DBSession.add(group)
+        DBSession.flush()
 #        model = MyModel(name='one', value=1)
 #        DBSession.add(model)

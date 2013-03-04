@@ -28,18 +28,23 @@
             <li><a href="http://www.linkedin.com/in/pzatrick"><img class="linkedin-ico" src="/static/img/linkedin.jpg" />LinkedIn</a></li>
             <li><a href="http://duolingo.com/#/pzatrick"><img class="duolingo-ico" src="/static/img/duolingo-owl.png" />Duolingo</a></li>
         </ul>
-        <p>For anywhere else, my username is probably pzatrick, if that helps.</p>
+        <p></p>
     </div>
 </div>
     <footer>
         <div class="torn-edge"></div>
         <div class="left-side">
-            <a class="sign left-sign" href="${request.route_url('hiero_entry_category', slug='personal')}">Media</a>
+            <a class="sign left-sign" href="${request.route_url('hiero_entry_category', slug='media')}">Media</a>
             <a class="sign left-sign" href="${request.route_url('resume')}">Resumé</a>
         </div>
         <div class="right-side">
-            <a class="sign right-sign" href="${request.route_url('hiero_entry_category', slug='tech')}">Ramblings</a>
-            <a class="sign right-sign" href="${request.route_url('projects')}">Software</a>
+            <a class="sign right-sign" href="${request.route_url('hiero_entry_category', slug='ramblings')}">Ramblings</a>
+            <a class="sign right-sign" href="${request.route_url('hiero_entry_category', slug='software')}">Software</a>
+        </div>
+        <div class="middle bottom">
+            <address>
+                Powered by <a href="https://github.com/eventray/hiero">Hiero</a>
+            </address>
         </div>
     </footer>
 </div>
