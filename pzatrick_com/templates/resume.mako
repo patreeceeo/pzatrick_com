@@ -1,3 +1,9 @@
-<%inherit file="pzatrick_com:templates/layout3.mako"/>
-<a href="${request.static_url('pzatrick_com:static/resume.pdf')}">PDF</a>
-<%include file="pzatrick_com:templates/resume_base.mako"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/resume.css">
+</head>
+<body class="resume">
+    <%include file="pzatrick_com:templates/resume_content.mako"/>
+</body>
+</html>

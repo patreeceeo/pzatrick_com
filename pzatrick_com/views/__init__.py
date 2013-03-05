@@ -32,16 +32,13 @@ def about(request):
     route_name='resume'
     , renderer='pzatrick_com:templates/resume.mako'
 )
-@view_config(
-    route_name='resume.html'
-    , renderer='pzatrick_com:templates/resume_empty.mako'
-)
 def resume(request):
     with open(os.path.join(here, '../static/resume.json')) as f:
         content = f.read()
         data = json.loads(content)
         dev = data['developer']
         contact = data['contact']
+        languages = data['languages']
         preamble = data['preamble']
         catalog = data['catalog']
         experience = data['experiences']
@@ -49,6 +46,7 @@ def resume(request):
     return dict(
         dev=dev
         , contact=contact
+        , languages=languages
         , preamble=preamble
         , catalog=catalog
         , experience=experience

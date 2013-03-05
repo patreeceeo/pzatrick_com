@@ -4,13 +4,16 @@
 
 <div id="main-body-left">
     <header>
-        <h3>${entry.title}</h3>
-        <figure>
-            <img src="${entry.image_url or '/static/img/me.jpg'}" />
-        </figure>
+        <h3><a href="/">home</a> &gt; <a href="/blog/category/${entry.category.slug}">${entry.category.title}</a></h3>
         <div class="torn-edge"></div>
     </header>
     <div class="post">
+        <div class="sidebar">
+        </div>
+        <figure>
+            <img src="${entry.image_url or '/static/img/me.jpg'}" />
+        </figure>
+        <h3>${entry.title}</h3>
         ${entry.html_content | n}
     </div>
     <footer>

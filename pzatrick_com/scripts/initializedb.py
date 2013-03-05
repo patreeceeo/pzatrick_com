@@ -14,6 +14,7 @@ from ..models import (
     , Base
     , Group
     , User
+    , Category
 )
 
 def usage(argv):
@@ -34,9 +35,11 @@ def main(argv=sys.argv):
     with transaction.manager:
         user = User(username='pzatrick', password='1639@Hawkins', email="patrickcandoit@gmail.com")
         group = Group(name='admin', description='AYBABTU') 
+        category = Category(title='misc.', slug='misc') 
         group.users.append(user)
         DBSession.add(user)
         DBSession.add(group)
+        DBSession.add(category)
         DBSession.flush()
 #        model = MyModel(name='one', value=1)
 #        DBSession.add(model)

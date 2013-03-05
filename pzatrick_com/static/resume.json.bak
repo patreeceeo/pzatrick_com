@@ -5,13 +5,11 @@
         , "state": "Florida"
     }
     , "contact": [
-        { "method": "Email", "value": "pzatrick0@gmail.com" }
+        { "method": "Email", "value": "patrickcandoit@gmail.com" }
         , { "method": "LinkedIn", "value": "pzatrick" }
         , { "method": "Github", "value": "pzatrick" }
         , { "method": "Twitter", "value": "pzatrick" }
-        , { "method": "Website", "value": "pzatrick.com" }
     ]
-    , "languages": ["English", "Spanish"]
     , "preamble": { 
         "title": "Web Software Developer"
         , "content": "I want to work on projects that have a potential for real-world, positive impact."
@@ -29,9 +27,9 @@
             "name": "Frameworks/Libraries"
             , "skills": [
                 { "key": "pyramid", "name": "Pyramid", "href": "http://www.pylonsproject.org/" }
-                , { "key": "sqlalchemy", "name": "SQL Alchemy", "href": "http://www.sqlalchemy.org/" }
+                , { "key": "sqlalchemy", "name": "SQL Alchemy", "href": "http://www.sqlalchemy.org/" },
                 , { "key": "jquery", "name": "jQuery", "href": "http://jquery.com" }
-                , { "key": "backbone", "name": "Backbone.js", "href": "http://backbonejs.org"}
+                , { "key": "backbone", "name": "Backbone.js", "http://backbonejs.org"}
             ]
         }
         , {
@@ -57,7 +55,7 @@
         {
             "type": "professional"
             , "start": 2012
-            , "end": 2013
+            , "end": undefined
             , "company": "EventRay"
             , "title": "Hacker"
             , "description": "Part of the company from the very beginning. Helped make decisions regarding what features to pursue and the architecture of the application as well as doing the actual development."
@@ -73,21 +71,21 @@
                 , { "key": "pyramid" }
                 , { "key": "backbone" }
                 , { "key": "vim" }
-                , { "key": "CSS3" }
             ]
         }
         , {
             "type": "professional"
-            , "start": 2007
+            , "start": 2008
             , "end": 2011
             , "company": "Adtec Digital"
             , "title": "Developer"
-            , "description": "Developed product firmware for video distribution and contribution hardware solutions."
+            , "description": "Developed firmware for video distribution and contribution hardware solutions."
             , "accomplishments": [
                 "Retrofitted an API around a large codebase written in C++"
-                , "Implemented an API to allow developers to see what is/would be displayed on the device's LCD display."
+                , "Implemented an API to allow developers to see what is/would be displayed on the device's LCD display, helped write a GUI that consumed this API."
                 , "Designed an SNMP Schema."
                 , "Helped design a schema for an embedded database in sqlite."
+                , 
             ]
             , "skillKeys": [
                 { "key": "GNU C++" }
