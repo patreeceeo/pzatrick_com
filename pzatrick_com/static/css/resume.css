@@ -52,6 +52,7 @@ table {
         margin: 1in 2.5in;
     }
 }
+
 @media screen and (max-width: 10in) {
     body {
         margin: .5in .5in;

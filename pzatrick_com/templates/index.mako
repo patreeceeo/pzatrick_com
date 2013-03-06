@@ -9,11 +9,11 @@
         <div class="sidebar">
         </div>
         <figure>
-            <img src="${request.static_url('pzatrick_com:static/img/me.jpg')}" />
+            <img src="/static/img/me.jpg" />
         </figure>
         <h2>Who am I?</h2>
         <p>Programmer by hobbie and trade, wanna-be artist and art enthusiast, fan of the fringe and subcultures. Partial to abtract art, surrealism, minimalism, folk rock, surf rock, punk rock, DIY. Other interests and tendancies mostly flow from my artistic tastes, living life is an art.</p>
-        <p>And Christian. Though it hasn't always been much of a priority for me lately the way I think about big picture things has been changing. I should write about it and how it relates to the rest of who I am but in the meantime let me reassure you that I'm not (super) weird.</p>
+        <p>And Christian. Though it hasn't always been much of a priority for me lately the way I think about big picture things has been changing. I should write about it and how it relates to the rest of who I am but in the meantime will you take my word for it that I'm not (super) weird?</p>
         <p>Bicycle enthusiast and advocate. Riding bikes instead of driving is healthier for individuals and communities, better for wallets, better for the environment and FUN.</p> 
         <h2>Recent Transmissions</h2>
         <ul>
