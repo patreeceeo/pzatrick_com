@@ -9,7 +9,7 @@
         <div class="sidebar">
         </div>
         <figure>
-            <img src="/static/img/me.jpg" />
+            <img src="${request.static_url('pzatrick_com:static/img/me.jpg')}" />
         </figure>
         <h2>Who am I?</h2>
         <p>Programmer by hobbie and trade, wanna-be artist and art enthusiast, fan of the fringe and subcultures. Partial to abtract art, surrealism, minimalism, folk rock, surf rock, punk rock, DIY. Other interests and tendancies mostly flow from my artistic tastes, living life is an art.</p>
